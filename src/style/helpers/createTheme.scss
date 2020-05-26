@@ -1,0 +1,47 @@
+@import "../themes.scss";
+
+@mixin stylify($styles) {
+  @each $theme, $map in $styles {
+    .style#{$theme} & {
+      $style-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($styles, $theme), "#{$key}");
+        $style-map: map-merge(
+          $style-map,
+          (
+            $key: $value,
+          )
+        ) !global;
+      }
+      @content;
+      $style-map: null !global;
+    }
+  }
+}
+
+@function styled($key) {
+  @return map-get($style-map, $key);
+}
+
+@mixin themify($themes) {
+  @each $theme, $map in $themes {
+    .theme#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), "#{$key}");
+        $theme-map: map-merge(
+          $theme-map,
+          (
+            $key: $value,
+          )
+        ) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function themed($key) {
+  @return map-get($theme-map, $key);
+}

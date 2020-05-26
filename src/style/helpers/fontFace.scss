@@ -1,0 +1,46 @@
+@mixin font-face {
+  @font-face {
+    font-weight: 700;
+    font-family: OpenSans;
+    src: local("OpenSans Bold"), local("OpenSans-Bold"),
+      url("~@/assets/fonts/OpenSans/OpenSans-Bold.woff") format("woff"),
+      url("~@/assets/fonts/OpenSans/OpenSans-Bold.woff2") format("woff2"),
+      url("~@/assets/fonts/OpenSans/OpenSans-Bold.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-weight: 400;
+    font-family: OpenSans;
+    src: local("OpenSans Regular"), local("OpenSans-Regular"),
+      url("~@/assets/fonts/OpenSans/OpenSans-Regular.woff") format("woff"),
+      url("~@/assets/fonts/OpenSans/OpenSans-Regular.woff2") format("woff2"),
+      url("~@/assets/fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-weight: 300;
+    font-family: OpenSans;
+    src: local("OpenSans Light"), local("OpenSans-Light"),
+      url("~@/assets/fonts/OpenSans/OpenSans-Light.woff") format("woff"),
+      url("~@/assets/fonts/OpenSans/OpenSans-Light.woff2") format("woff2"),
+      url("~@/assets/fonts/OpenSans/OpenSans-Light.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-weight: 600;
+    font-family: OpenSans;
+    src: local("OpenSans SemiBold"), local("OpenSans-SemiBold"),
+      url("~@/assets/fonts/OpenSans/OpenSans-SemiBold.woff") format("woff"),
+      url("~@/assets/fonts/OpenSans/OpenSans-SemiBold.woff2") format("woff2"),
+      url("~@/assets/fonts/OpenSans/OpenSans-SemiBold.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-weight: 800;
+    font-family: OpenSans;
+    src: local("OpenSans ExtraBold"), local("OpenSans-ExtraBold"),
+      url("~@/assets/fonts/OpenSans/OpenSans-ExtraBold.woff") format("woff"),
+      url("~@/assets/fonts/OpenSans/OpenSans-ExtraBold.woff2") format("woff2"),
+      url("~@/assets/fonts/OpenSans/OpenSans-ExtraBold.ttf") format("truetype");
+  }
+}

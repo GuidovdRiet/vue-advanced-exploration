@@ -1,0 +1,28 @@
+@import "../../../../style/helpers/createTheme.scss";
+
+.button {
+  @include themify($themes) {
+    color: themed("buttonTextColor");
+    background-color: themed("buttonBackgroundColor");
+  }
+  padding: 10px 20px;
+  border: 0px;
+  font-size: 1.2rem;
+  margin-top: 15px;
+  border-radius: 5px;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+.button:hover {
+  background-color: lightgrey;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: 0;
+}
+
+.button:active {
+  outline: 0;
+}

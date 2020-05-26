@@ -1,0 +1,17 @@
+// Themes
+@import "./themes/chainelsTheme/chainelsTheme.scss";
+@import "./themes/whiteLabelTheme/whiteLabelTheme.scss";
+
+// Styles
+@import "./themes/darkTheme/darkTheme.scss";
+@import "./themes/lightTheme/lightTheme.scss";
+
+$styles: (
+  Light: $lightTheme,
+  Dark: $darkTheme,
+);
+
+$themes: (
+  White: $whiteLabelTheme,
+  Chainels: $chainelsTheme,
+);

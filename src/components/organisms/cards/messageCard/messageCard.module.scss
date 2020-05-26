@@ -1,0 +1,46 @@
+@import "../../../../style/helpers/createTheme.scss";
+
+.wrapper {
+  box-shadow: 0 6px 15px rgba(36, 37, 38, 0.08);
+  border-radius: 20px;
+  margin-bottom: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  padding: 0 0 40px 0;
+  max-width: 700px;
+  @include stylify($styles) {
+    background-color: styled("cardBackgroundColor");
+    box-shadow: styled("boxShadow");
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .img {
+    width: 100%;
+  }
+
+  .contentWrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    @include stylify($styles) {
+      color: styled("textColor");
+    }
+  }
+
+  .title {
+    margin-top: 38px;
+  }
+
+  .buttonWrapper {
+    width: 82%;
+  }
+}
